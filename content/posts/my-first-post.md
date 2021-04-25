@@ -6,4 +6,4 @@ tags: ["test"]
 ---
 # Test
 
-deploy test
+deploy test!
