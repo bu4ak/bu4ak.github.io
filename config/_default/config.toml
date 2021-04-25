@@ -1,0 +1,17 @@
+baseURL = "https://bu4ak.github.io"
+languageCode = "ru"
+staticDir = ["images"]
+theme = "anatole"
+#title = "title"
+
+[taxonomies]
+tag = "tags"
+
+[params]
+author = "Igor Buchakov"
+description = "Hi there. I am a backend developer."
+profilePicture = "ava.jpeg"
+title = "Igor Buchakov"
+customCss = ["css/custom.css"]
+displayMode = "dark"
+disableThemeSwitcher = true
