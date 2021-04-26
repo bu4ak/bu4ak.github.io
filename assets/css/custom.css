@@ -10,6 +10,7 @@ a:hover {
 .sidebar .logo-title .title img {
     transition: 0.5s;
     width: 175px;
+    height: 175px;
 }
 
 .sidebar .logo-title .title img:hover {
