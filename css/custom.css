@@ -1,8 +1,3 @@
-:root {
-    --bg-color: #24292e !important;
-    --link-color: pink !important;
-}
-
 a:hover {
     color: pink !important;
 }
