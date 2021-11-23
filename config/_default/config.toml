@@ -1,17 +1,47 @@
-baseURL = "https://bu4ak.github.io"
+baseurl = "https://bu4ak.github.io"
 languageCode = "ru"
+defaultcontentlanguage = "en"
 staticDir = ["assets"]
-theme = "anatole"
-#title = "title"
+theme = "hugo-coder"
 
-[taxonomies]
-tag = "tags"
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 [params]
 author = "Igor Buchakov"
-customCss = ["css/custom.css"]
-description = "Hi there. I am a backend developer."
-profilePicture = "images/ava.jpeg"
-title = "Igor Buchakov"
-# displayMode = "dark"
-# disableThemeSwitcher = true
+info = "Backend developer (PHP)"
+description = "John Doe's personal website"
+keywords = "developer,personal"
+avatarurl = "images/ava.jpg"
+enableTwemoji = true
+colorScheme = "auto"
+hidecolorschemetoggle = false
+#customCSS = ["css/custom.css"]
+
+# Social links
+[[params.social]]
+  name = "GitHub"
+  icon = "fa fa-github fa-2x"
+  weight = 4
+  url = "https://github.com/bu4ak"
+[[params.social]]
+  name = "Linkedin"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 5
+  url = "https://www.linkedin.com/in/igor-buchakov-2a322119a"
+[[params.social]]
+  name = "Instagram"
+  icon = "fa fa-instagram fa-2x"
+  weight = 3
+  url = "https://www.instagram.com/bu4akov"
+[[params.social]]
+  name = "e-mail"
+  icon = "fa fa-envelope fa-2x"
+  weight = 2
+  url = "mailto:igorbu4@gmail.com"
+[[params.social]]
+  name = "e-mail"
+  icon = "fa fa-telegram fa-2x"
+  weight = 1
+  url = "https://t.me/igorbu4"

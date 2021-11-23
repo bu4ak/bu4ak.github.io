@@ -2,15 +2,14 @@ a:hover {
     color: pink !important;
 }
 
-.sidebar .logo-title .title img {
+.avatar img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
     transition: 0.5s;
-    width: 175px;
-    height: 175px;
 }
-
-.sidebar .logo-title .title img:hover {
+.avatar img:hover {
     -webkit-transform: scale(0.97);
     -ms-transform: scale(0.97);
     transform: scale(0.97);
 }
-
