@@ -11,7 +11,7 @@ pygmentscodefencesguesssyntax = true
 [params]
 author = "Igor Buchakov"
 info = "Backend developer (PHP)"
-description = "John Doe's personal website"
+description = "Igor's personal website"
 keywords = "developer,personal"
 avatarurl = "images/ava.jpg"
 enableTwemoji = true
@@ -45,3 +45,9 @@ hidecolorschemetoggle = false
   icon = "fa fa-telegram fa-2x"
   weight = 1
   url = "https://t.me/igorbu4"
+[[params.social]]
+  name = "CV"
+  icon = "fa fa-file fa-2x"
+  weight = 0
+  title= "asdasd"
+  url = "https://hh.ru/applicant/resumes/view?resume=40cb3c77ff032bb0060039ed1f416b4f4f4572"
