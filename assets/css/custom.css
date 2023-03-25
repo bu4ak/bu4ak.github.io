@@ -1,10 +1,9 @@
 a:hover {
-    color: pink !important;
+    color: #70b2f8 !important;
 }
 
 .avatar img {
-    width: 100% !important;
-    height: 100% !important;
+    width: 350px !important;
     border-radius: 50%;
     transition: 0.5s;
 }

@@ -10,14 +10,14 @@ pygmentscodefencesguesssyntax = true
 
 [params]
 author = "Igor Buchakov"
-info = "Backend developer (PHP)"
+info = "Backend developer (PHP/GO)"
 description = "Igor's personal website"
 keywords = "developer,personal"
 avatarurl = "images/ava.jpg"
 enableTwemoji = true
 colorScheme = "auto"
 hidecolorschemetoggle = false
-#customCSS = ["css/custom.css"]
+customCSS = ["css/custom.css"]
 
 # Social links
 [[params.social]]
@@ -29,7 +29,7 @@ hidecolorschemetoggle = false
   name = "Linkedin"
   icon = "fa fa-linkedin fa-2x"
   weight = 5
-  url = "https://www.linkedin.com/in/igor-buchakov-2a322119a"
+  url = "https://www.linkedin.com/in/igor-b-2a322119a"
 [[params.social]]
   name = "Instagram"
   icon = "fa fa-instagram fa-2x"
@@ -47,7 +47,12 @@ hidecolorschemetoggle = false
   url = "https://t.me/igorbu4"
 [[params.social]]
   name = "CV"
-  icon = "fa fa-file fa-2x"
+  icon = "fa fa-id-card fa-2x"
   weight = 0
-  title= "asdasd"
+  title= "resume"
   url = "https://hh.ru/applicant/resumes/view?resume=40cb3c77ff032bb0060039ed1f416b4f4f4572"
+
+[module]
+  [[module.imports]]
+    path = "github.com/luizdepra/hugo-coder"
+ 
