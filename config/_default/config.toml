@@ -10,7 +10,7 @@ pygmentscodefencesguesssyntax = true
 
 [params]
 author = "Igor Buchakov"
-info = "Backend developer (PHP/GO)"
+info = "Backend developer (GO/PHP)"
 description = "Igor's personal website"
 keywords = "developer,personal"
 avatarurl = "images/ava.jpg"
