@@ -15,7 +15,7 @@ description = "Igor's personal website"
 keywords = "developer,personal"
 avatarurl = "images/ava.jpg"
 enableTwemoji = true
-colorScheme = "auto"
+colorScheme = "dark"
 hidecolorschemetoggle = false
 customCSS = ["css/custom.css"]
 
