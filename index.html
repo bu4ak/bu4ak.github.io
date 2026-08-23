@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Igor B.</title>
   <meta name="description" content="Igor B. — backend engineer (Go) at Avito">
-  <meta name="keywords" content="go,golang,backend,engineer,avito,developer">
   <meta name="author" content="Igor B.">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#212121">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafafa">
   <link rel="canonical" href="https://bu4ak.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Igor B.">
@@ -22,13 +23,14 @@
     document.documentElement.dataset.theme = localStorage.getItem('theme')
       || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   </script>
+  <script src="/js/main.js" defer></script>
 </head>
 <body>
   <main>
     <section class="home">
       <div class="avatar-scene">
         <div class="avatar" id="avatar">
-          <img src="/images/ava.jpg" alt="Igor B." width="200" height="200">
+          <img src="/images/ava.jpg" alt="Igor B." width="200" height="200" decoding="async" fetchpriority="high">
         </div>
       </div>
       <h1>Igor B.</h1>
@@ -69,32 +71,6 @@
     </section>
   </main>
 
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme"><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
-  <script>
-    document.getElementById('theme-toggle').addEventListener('click', function () {
-      var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = next;
-      localStorage.setItem('theme', next);
-    });
-    matchMedia('(prefers-color-scheme: light)').addEventListener('change', function (e) {
-      if (!localStorage.getItem('theme')) {
-        document.documentElement.dataset.theme = e.matches ? 'light' : 'dark';
-      }
-    });
-
-    var avatar = document.getElementById('avatar');
-    var finePointer = matchMedia('(pointer: fine)').matches;
-    var reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (avatar && finePointer && !reducedMotion) {
-      var MAX_TILT = 10;
-      avatar.addEventListener('mousemove', function (e) {
-        var r = avatar.getBoundingClientRect();
-        var dx = (e.clientX - r.left) / r.width * 2 - 1;
-        var dy = (e.clientY - r.top) / r.height * 2 - 1;
-        avatar.style.transform = 'rotateY(' + (dx * MAX_TILT).toFixed(2) + 'deg) rotateX(' + (-dy * MAX_TILT).toFixed(2) + 'deg)';
-      });
-      avatar.addEventListener('mouseleave', function () { avatar.style.transform = ''; });
-    }
-  </script>
+  <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme"><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
 </body>
 </html>
