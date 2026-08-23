@@ -90,6 +90,7 @@ main {
 }
 
 .avatar img {
+    display: block;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -99,6 +100,33 @@ main {
 .home h1 {
     margin: 2.4rem 0 0.4rem;
     font-size: 3.2rem;
+}
+
+.error-mark {
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-mark .error-code {
+    margin: 0;
+    font-size: 6.4rem;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.error-zero {
+    color: var(--accent);
+}
+
+.social-slot {
+    margin: 3.2rem 0 0;
+    height: 2.8rem;
 }
 
 .subtitle {
@@ -117,6 +145,7 @@ main {
     list-style: none;
     margin: 3.2rem 0 0;
     padding: 0;
+    line-height: 0;
 }
 
 .social a {
