@@ -1,5 +1,2 @@
 .idea
-public
-resources
-.hugo_build.lock
-build
+.DS_Store
